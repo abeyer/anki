@@ -9,6 +9,7 @@ from anki.importing.anki1 import Anki1Importer
 from anki.importing.supermemo_xml import SupermemoXmlImporter
 from anki.importing.mnemo import MnemosyneImporter
 from anki.importing.pauker import PaukerImporter
+from anki.importing.jsonimp import JSONImporter
 from anki.lang import _
 
 Importers = (
@@ -18,4 +19,5 @@ Importers = (
     (_("Mnemosyne 2.0 Deck (*.db)"), MnemosyneImporter),
     (_("Supermemo XML export (*.xml)"), SupermemoXmlImporter),
     (_("Pauker 1.8 Lesson (*.pau.gz)"), PaukerImporter),
+    (_("JSON Data (*.json)"), JSONImporter),
     )
